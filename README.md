@@ -1,1 +1,1 @@
-# this is just a learning website!
+# This is just a learning website!

@@ -16,9 +16,11 @@
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-       <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid-rtl.min.css">
+    <script type="text/javascript" src="js/jquery/jquery-2.2.4.min.js"></script>
+     <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
      
 
 
@@ -27,13 +29,38 @@
 <body>
 
     <!-- ##### Header Area Start ##### -->
-     <header class="header-area" >
-         <div class="top-header-area" style="background-color: #e9e9e9">
+      <header class="header-area" >
+         <div class="top-header-area" style="background-color: #e9e9e9; height:200px">
             <div class="container" >
                 <div class="row">
                     <div class="col-12">
-                        <div class="top-header-content d-flex align-items-center justify-content-between" style="background-color: #e9e9e9">
-                             <img src="aa.jpg" >
+                        <div class="top-header-content d-flex align-items-center justify-content-between" style="background-color: #e9e9e9; height: 180px ">
+                             
+                             <div id="demo" class="carousel slide" data-ride="carousel" >
+                                  <ul class="carousel-indicators">
+                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo" data-slide-to="1"></li>
+                                    <li data-target="#demo" data-slide-to="2"></li>
+                                  </ul>
+                                <div class="carousel-inner" >
+                                    <div class="carousel-item active">
+                                        <img src="aa.jpg"  alt="" style="height: 220px" />
+
+                                    </div>
+                                    <div class="carousel-item" >
+                                        <img src="daryanet.jpg"  alt="" style="height: 220px"/>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="bb.jpg"  alt="" style="height: 220px"/>
+                                    </div>
+                                </div>
+                            </div>
+                                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
                         </div>
                     </div>
                  </div>
@@ -71,14 +98,14 @@
                                 <!-- Login -->
                                 <div class="login d-flex">
 
-                                    <a href="#">در باره ما </a>
-                                    <a href="#">تماس با ما</a>
-                                    <a href="#">تبرنامه</a>
+                                    <a href="aboutf.html">در باره ما </a>
+                                    <a href="contactrtl.html">تماس با ما</a>
+                                    <a href="newsletter.html">تبرنامه</a>
                                 </div>
                                 <div class="login d-flex">
-                                    <a href="about.html">English </a>
-                                    <a href="#">پشتو</a>
-                                    <a href="aboutf.html">دری</a>
+                                    <a href="index.html">English </a>
+                                    <a href="indexrtl.html">پشتو</a>
+                                    <a href="indexrtl.html">دری</a>
                                     
                                 </div>
                             </div>
@@ -841,31 +868,33 @@
 
 
           <div class="newspaper-main" id="" style="background-color: gray; height: 50px">
-                   <div class="" style="height: 30px">
-                   <div class="container" >
-                    
+                  <div class="" style="height: 30px">
+                  <div class="container" >
+                   
 
 
-                            <div class="hero-area" style="padding: 5px 0px 0px">
-                             <div class="row align-items-center">
-                                 <div class="col-12 col-lg-9">
-                                  <!-- Breaking News Widget -->
-                                  <div class="breaking-news-area d-flex align-items-center">
-                                    <div class="news-title">
-                                    <p>تازه‌ترین خبرها</p>
+                           <div class="hero-area" style="padding: 5px 0px 0px">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-lg-6">
+                                 <!-- Breaking News Widget -->
+                                 <div class="breaking-news-area d-flex align-items-center">
+                                   <div class="news-title">
+                                   <p><b>تازه‌ترین خبرها  </b></p>
+                               </div>
+                               <div id="breakingNewsTicker" class="ticker" style="background-color: gray">
+                                   <ul>
+                                       <li><a href="#"><b>صبغت احمدی بدلیل اظهارات اخیرش از سخن‌گویی وزارت خارجه برکنار شد   </b></a></li>
+                                       <li><a href="#"><b>شماری از باشنده‌گان کابل در برابر سفارت ایران دست به اعتراض زدند  </b></a></li>
+                                       <li><a href="#"><b>بغت احمدی بدلیل اظهارات اخیرش از سخن‌گویی وزارت خارجه برکنار شد  </b> </a></li>
+                                   </ul>
+                               </div>
                             </div>
-                                <div id="breakingNewsTicker" class="ticker">
-                                    <ul>
-                                        <li><a href="#">صبغت احمدی بدلیل اظهارات اخیرش از سخن‌گویی وزارت خارجه برکنار شد</a></li>
-                                        <li><a href="#">شماری از باشنده‌گان کابل در برابر سفارت ایران دست به اعتراض زدند </a></li>
-                                        <li><a href="#">بغت احمدی بدلیل اظهارات اخیرش از سخن‌گویی وزارت خارجه برکنار شد< </a></li>
-                                    </ul>
-                                </div>
-                             </div>
-                    </div>
-              </div>
-               
-        </div>
+                   </div>
+             </div>
+            </div>           
+       </div>
+     </div>
+   </div>
     </header>
     <!-- ##### Header Area End ##### -->
 

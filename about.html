@@ -16,18 +16,46 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script type="text/javascript" src="js/jquery/jquery-2.2.4.min.js"></script>
+     <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
 
 </head>
 
 <body>
     <!-- ##### Header Area Start ##### -->
      <header class="header-area" >
-         <div class="top-header-area" style="background-color: #e9e9e9">
+         <div class="top-header-area" style="background-color: #e9e9e9; height:200px">
             <div class="container" >
                 <div class="row">
                     <div class="col-12">
-                        <div class="top-header-content d-flex align-items-center justify-content-between" style="background-color: #e9e9e9">
-                             <img src="aa.jpg" >
+                        <div class="top-header-content d-flex align-items-center justify-content-between" style="background-color: #e9e9e9; height: 180px ">
+                             
+                             <div id="demo" class="carousel slide" data-ride="carousel" >
+                                  <ul class="carousel-indicators">
+                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo" data-slide-to="1"></li>
+                                    <li data-target="#demo" data-slide-to="2"></li>
+                                  </ul>
+                                <div class="carousel-inner" >
+                                    <div class="carousel-item active">
+                                        <img src="aa.jpg"  alt="" style="height: 220px" />
+
+                                    </div>
+                                    <div class="carousel-item" >
+                                        <img src="daryanet.jpg"  alt="" style="height: 220px"/>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="bb.jpg"  alt="" style="height: 220px"/>
+                                    </div>
+                                </div>
+                            </div>
+                                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
                         </div>
                     </div>
                  </div>
